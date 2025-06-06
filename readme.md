@@ -1,0 +1,1 @@
+To create the necessary files,add your folder called "songs" to the root directory. After run only the shazamlite.py after installing the requirements. You can then use the microphone.py to test kid use the manual.py,it requires a snippet called "sample.mp3" to work.
