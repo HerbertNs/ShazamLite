@@ -6,7 +6,7 @@ from scipy.signal import find_peaks
 import sounddevice as sd
 from scipy.io.wavfile import write
 
-DB_PATH = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\shazam2.db'
+DB_PATH = 'ShazamLite\\shazam2.db'
 
 def record_sample(output_path, duration=10, fs=44100):
     print(f"Recording {duration} seconds of audio...")
@@ -56,7 +56,7 @@ def identify_song(sample_filepath, cursor, top_n=1):
     return song_info
 
 if __name__ == "__main__":
-    sample_path = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\mic_sample.wav'
+    sample_path = 'ShazamLite\\mic_sample.wav'
     record_sample(sample_path, duration=10)  # Record 8 seconds from mic
 
     conn = sqlite3.connect(DB_PATH)
