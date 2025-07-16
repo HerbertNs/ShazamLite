@@ -4,8 +4,8 @@ import librosa
 import numpy as np
 from scipy.signal import find_peaks
 
-SONGS_FOLDER = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\songs'
-DB_PATH = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\shazam2.db'
+SONGS_FOLDER = 'ShazamLite\\songs'
+DB_PATH = 'ShazamLite\\shazam2.db'
 
 def ensure_tables(cursor):
     cursor.execute('''
