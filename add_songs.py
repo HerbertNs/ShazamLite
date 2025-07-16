@@ -1,8 +1,8 @@
 import os
 import sqlite3
 
-SONGS_FOLDER = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\songs'
-DB_PATH = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\shazam1.db'
+SONGS_FOLDER = 'ShazamLite\\songs'
+DB_PATH = 'ShazamLite\\shazam1.db'
 
 conn = sqlite3.connect(DB_PATH)
 cursor = conn.cursor()
