@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\shazam1.db')
+conn = sqlite3.connect('ShazamLite\\shazam1.db')
 cursor = conn.cursor()
 
 # Create table for song metadata
