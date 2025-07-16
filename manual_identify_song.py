@@ -3,7 +3,7 @@ import librosa
 import numpy as np
 from scipy.signal import find_peaks
 
-DB_PATH = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\shazam2.db'
+DB_PATH = 'ShazamLite\\shazam2.db'
 
 def generate_fingerprints(filepath):
     y, sr = librosa.load(filepath, mono=True, duration=30)
