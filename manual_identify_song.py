@@ -46,7 +46,7 @@ def identify_song(sample_filepath, cursor, top_n=1):
     return song_info
 
 if __name__ == "__main__":
-    sample_path = 'c:\\Users\\kbherbs\\Documents\\projects\\ShazamLite\\sample.mp3'  
+    sample_path = 'ShazamLite\\sample.mp3'  
     conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     identify_song(sample_path, cursor)
