@@ -3,7 +3,7 @@ import sqlite3
 conn = sqlite3.connect('ShazamLite\\shazam1.db')
 cursor = conn.cursor()
 
-# Create table for song metadata
+#metadata
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS songs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS songs (
 )
 ''')
 
-# Create table for fingerprints
+#fingerprints
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS fingerprints (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
